@@ -1,12 +1,3 @@
-+++
-Categories = ["Other"]
-Tags = ["cj"]
-date = "2017-06-10T14:32:03+08:00"
-title = "验证API说明"
-
-+++
-###### -
-
 ### 测试地址
 
 >http://d453400.cjshenghuo.com

@@ -1,11 +1,3 @@
-+++
-Categories = ["Other"]
-Tags = ["cj"]
-date = "2017-06-11T09:59:38+08:00"
-title = "需要验证token的API列表-用户版"
-
-+++
-###### -
 #### 获取用户信息
 >/Api/Android/getuserinfo.aspx?userid=30479
 
