@@ -4,7 +4,7 @@
 ## Tue, 13 Jun 2017 14:47:47 +0800
 
 ### 用户主分类获取
-GET /Api/Category/Main.aspx
+GET /Api/Category/First.aspx
 
 无参数
 
