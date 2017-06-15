@@ -1,4 +1,3 @@
-
 ## Tue, 13 Jun 2017 15:40:04 +0800
 >test.cjshenghuo.com
 ### 注册
@@ -38,3 +37,31 @@
 |---|---|
 |1|更新更成功|
 |0|userid不存在|
+
+### 推荐中心页面接口
+
+>GET /Api/Customer/Promoter.aspx?user_id=30528&page=1&page_per=2
+
+返回信息
+
+```javascript
+/*
+promoteCount:   推荐总数量
+
+totalPoint:     历史总积分
+
+d:              数据列表
+*/
+{
+    "promoteCount":1,
+    "totalPoint":110,
+    "d":[
+            {
+                "Time":"2017-06-15T09:19:16.28",
+                "Msg":"外卖消费",
+                "Point":10.00
+            }
+         ]
+}
+```
+
