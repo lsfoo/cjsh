@@ -46,6 +46,8 @@
 
 ```javascript
 /*
+isPromoter:     是否是推荐人
+
 promoteCount:   推荐总数量
 
 totalPoint:     历史总积分
@@ -53,6 +55,7 @@ totalPoint:     历史总积分
 d:              数据列表
 */
 {
+    "isPromoter":True
     "promoteCount":1,
     "totalPoint":110,
     "d":[
