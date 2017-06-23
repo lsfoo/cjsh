@@ -1,191 +1,72 @@
 
-GET /Api/Mall/List.aspx?page=0&page_per=10&sort=stock&desc=1&c1=0&c2=0&c3=0&brand=0
 
+GET /Api/Mall/List.aspx?ac=gifts&page=1&page_per=10&sort=price&desc=1&c1=0&c2=0&c3=2&brand=1&top=1&rec=1&s=%E5%88%86
 
-| 参数        | 描述             | 
-| ------------- | :-------------: | 
-| page      | right-aligned   | 
-| page_per      | centered        | 
-| sort | 价格price 积分point 指定sortnum 销量salenum 库存sock         | 
-| desc | 1倒序   0正序   |   
-| c1 | 一级分类id  |
-| c2| 二级分类id  |
-| c3| 三级分类id  |
-| brand| 品牌id  |
+| 参数          | 描述                                                 | 类型    |
+| ------------- | :-------------:                                      | :-----: |
+| ac            | gifts=积分产品列表, shop=商家列表                    | string  |
+| page          | 第几页                                               | int     |
+| page_per      | 每页数量                                             | int     |
+| sort          | 价格price 积分point 指定sortnum 销量salenum 库存sock | string  |
+| desc          | 1倒序   0正序                                        | int     |
+| c1            | 一级分类id                                           | int     |
+| c2            | 二级分类id                                           | int     |
+| c3            | 三级分类id                                           | int     |
+| brand         | 品牌id                                               | int     |
+| top           | 筛选置顶 top=1 显示置顶数据                          | int     |
+| rec           | 筛选推荐   rec=1 显示推荐数据                        | int     |
+| s             | 搜索内容                                             | string  |
 
-___
+不需要要参数可以不请求,或者按类型给0或者空
 ```
-
 {
     "list": [
     {
-        "Id": 5110,
-            "Name": "睫毛膏",
-            "BrandId": null,
-            "ShopId": 0,
-            "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704221642333661.jpg",
-            "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704221642333661.jpg",
+        "Id": 5198,
+            "Name": "积分超多",
+            "BrandId": 1,
+            "Brand": "22222",
+            "ShopId": 916,
+            "Shop": "张英红焖鸭",
+            "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201705/201705301603542929.jpg",
+            "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201705/201705301603542929.jpg",
             "Ctx": "&nbsp;",
-            "FirstClassId": 32,
-            "SecondClassId": null,
-            "ThirdClassId": 0,
-            "Stock": 100,
-            "Price": 0.0,
-            "Point": 166,
-            "SaleNum": 0
+            "C1Id": 1033,
+            "C1": "商超百货",
+            "C2Id": 37,
+            "C2": "休闲零食",
+            "C3Id": 2,
+            "C3": "三级分类",
+            "Stock": 45,
+            "Price": 5005.0,
+            "Point": 5005,
+            "SaleNum": 0,
+            "Top": true,
+            "REC": true
 
     },
     {
-        "Id": 5111,
-        "Name": "苹果干细胞套装",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704221643358738.jpg",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704221643358738.jpg",
+        "Id": 5197,
+        "Name": "积分多多",
+        "BrandId": 1,
+        "Brand": "22222",
+        "ShopId": 916,
+        "Shop": "张英红焖鸭",
+        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201705/201705301603169960.jpg",
+        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201705/201705301603169960.jpg",
         "Ctx": "&nbsp;",
-        "FirstClassId": 32,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 788,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5112,
-        "Name": "潘多拉银饰V",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704221644325039.jpg",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704221644325039.jpg",
-        "Ctx": "&nbsp;",
-        "FirstClassId": 34,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 1199,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5113,
-        "Name": "习酒金典",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230926056542.png",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230926056542.png",
-        "Ctx": "&nbsp;&nbsp;本商品由国际酒城提供",
-        "FirstClassId": 30,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 4388,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5114,
-        "Name": "习酒金质",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230926558427.png",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230926558427.png",
-        "Ctx": "&nbsp;本商品由国际酒城提供&nbsp;",
-        "FirstClassId": 30,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 3766,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5115,
-        "Name": "习酒窖藏1998",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230932582550.png",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230932582550.png",
-        "Ctx": "&nbsp;&nbsp;本商品由国际酒城提供",
-        "FirstClassId": 30,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 5999,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5116,
-        "Name": "习酒窖藏1988",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230934168957.png",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704230934168957.png",
-        "Ctx": "&nbsp;&nbsp;本商品由国际酒城提供",
-        "FirstClassId": 30,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 8388,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5117,
-        "Name": "火山岩稻花香",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704231047007381.jpg",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704231047007381.jpg",
-        "Ctx": "&nbsp;10斤装",
-        "FirstClassId": 33,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 299,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5118,
-        "Name": "食博士珍珠米20斤",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704231051253723.jpg",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704231051253723.jpg",
-        "Ctx": "&nbsp;",
-        "FirstClassId": 33,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 299,
-        "SaleNum": 0
-
-    },
-    {
-        "Id": 5119,
-        "Name": "食博士长粒米20斤",
-        "BrandId": null,
-        "ShopId": 0,
-        "Pic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704231056302590.jpg",
-        "BigPic": "http://ftj0paqjf6lyxulz.cjshenghuo.com/upload/201704/201704231056302590.jpg",
-        "Ctx": "&nbsp;",
-        "FirstClassId": 33,
-        "SecondClassId": null,
-        "ThirdClassId": 0,
-        "Stock": 100,
-        "Price": 0.0,
-        "Point": 299,
-        "SaleNum": 0
+        "C1Id": 1033,
+        "C1": "商超百货",
+        "C2Id": 37,
+        "C2": "休闲零食",
+        "C3Id": 2,
+        "C3": "三级分类",
+        "Stock": 10,
+        "Price": 2003.0,
+        "Point": 2003,
+        "SaleNum": 0,
+        "Top": true,
+        "REC": true
 
     }
 
