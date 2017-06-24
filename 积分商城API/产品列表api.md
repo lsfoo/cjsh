@@ -16,7 +16,7 @@ GET /Api/Mall/List.aspx?ac=gifts&page=1&page_per=10&sort=price&desc=1&c1=0&c2=0&
 | top           | 筛选置顶 top=1 显示置顶数据                          | int     |
 | rec           | 筛选推荐   rec=1 显示推荐数据                        | int     |
 | s             | 搜索内容                                             | string  |
-| shop_id_      | 商家ID                                               | int     |
+| shop_id       | 商家ID                                               | int     |
 
 
 不需要要参数可以不请求,或者按类型给0或者空
