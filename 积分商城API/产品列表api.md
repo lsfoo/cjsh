@@ -1,6 +1,8 @@
 
 
-GET /Api/Mall/List.aspx?ac=gifts&page=1&page_per=10&sort=price&desc=1&c1=0&c2=0&c3=2&brand=1&top=1&rec=1&s=%E5%88%86
+旧 GET /Api/Mall/List.aspx?ac=gifts&page=1&page_per=10&sort=price&desc=1&c1=0&c2=0&c3=2&brand=1&top=1&rec=1&s=%E5%88%86
+
+#### 新 GET /api/mall/gift?page=1&page_per=10&sort=price&desc=1&c1=0&c2=0&c3=2&brand_id=1&top=1&rec=1&s=积分&shop_id=916
 
 | 参数          | 描述                                                 | 类型    |
 | ------------- | :-------------:                                      | :-----: |
@@ -12,7 +14,7 @@ GET /Api/Mall/List.aspx?ac=gifts&page=1&page_per=10&sort=price&desc=1&c1=0&c2=0&
 | c1            | 一级分类id                                           | int     |
 | c2            | 二级分类id                                           | int     |
 | c3            | 三级分类id                                           | int     |
-| brand         | 品牌id                                               | int     |
+| brand_id      | 品牌id                                               | int     |
 | top           | 筛选置顶 top=1 显示置顶数据                          | int     |
 | rec           | 筛选推荐   rec=1 显示推荐数据                        | int     |
 | s             | 搜索内容                                             | string  |

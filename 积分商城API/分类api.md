@@ -3,12 +3,15 @@
 
 #### 一级
 
-GET /Api/Mall/Category.aspx?ac=list&depth=1
+旧 GET /Api/Mall/Category.aspx?ac=list&depth=1
 
+新 GET /api/mall/category/1
 
 #### 二级
 
-GET /Api/Mall/Category.aspx?ac=list&depth=2&pid={{一级分类ID}}
+旧 GET /api/mall/category.aspx?ac=list&depth=2&pid={{一级分类ID}}
+
+新 GET /api/mall/category/2?id=1033
 
 ```
 {
