@@ -19,6 +19,8 @@
 | rec           | 筛选推荐   rec=1 显示推荐数据                        | int     |
 | s             | 搜索内容                                             | string  |
 | shop_id       | 商家ID                                               | int     |
+| point_limit   | 积分筛选最小                                         | int     |
+| point_max     | 积分筛选最大                                         | int     |
 
 
 不需要要参数可以不请求,或者按类型给0或者空
