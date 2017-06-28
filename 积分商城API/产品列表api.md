@@ -6,7 +6,6 @@
 
 | 参数          | 描述                                                 | 类型    |
 | ------------- | :-------------:                                      | :-----: |
-| ac            | gifts=积分产品列表, shop=商家列表                    | string  |
 | page          | 第几页                                               | int     |
 | page_per      | 每页数量                                             | int     |
 | sort          | 价格price 积分point 指定sortnum 销量salenum 库存sock | string  |
