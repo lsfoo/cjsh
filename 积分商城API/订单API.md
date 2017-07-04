@@ -1,6 +1,6 @@
 ### 订单列表
 
-GET /api/mall/order?page=1&page_per=10&customer_id=0&deliver_id=0&state=0&sort=Cdate&desc=1
+GET /api/mall/order?page=1&page_per=10&customer_id=0&deliver_id=0&state=0&sort=Cdate&desc=1&state=1&pay_state=1&deliver_state=1
 
 | 参数          | 描述                                              | 类型    |
 | ------------- | :-------------:                                   | :-----: |
@@ -11,6 +11,8 @@ GET /api/mall/order?page=1&page_per=10&customer_id=0&deliver_id=0&state=0&sort=C
 | customer_id   | 用户id                                            | int     |
 | deliver_id    | 骑d                                               | int     |
 | state         | （0->未审核,1->审核通过,2->审核未通过,3->已发货） | int     |
+| pay_state     | 支付状态 0->未支付,1->支付成功                    | int     |
+| deliver_state | （0->未分配,1->配送中,2->已送达）                 | int     |
 
 参数不需要可以不给，节约流量和资源
 
